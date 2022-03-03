@@ -1,3 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    background-color: #E5E5E5;
+}
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url('/fonts/Lato-Black.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url('/fonts/Lato-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url('/fonts/Lato-Regular.ttf') format("truetype");
+}
+
+.container {
+    display: flex;
     max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    height: 75px;
+    padding: 0 230px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.leftmenu {
+    width: 110px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.rightmenu {
+    width: 169px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.mainslide {
+    display: grid;
+    background-color: #F1E4E6;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.imgsettings {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ms-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mslogo {
+    margin: auto auto auto 64px;
+    width: 405px;
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mstext {
+    /* display: inline-block; */
+}
+
+.mstext-upper {
+    font-size: 48px;
+    font-family: Lato-Black;
+}
+
+.mstext-down {
+    font-size: 32px;
+    font-family: Lato-Bold;
+}
+
+.mstext-pink {
+    color: #F16D7F;
+}
+
+.typeofgoods {
+    margin: 64px auto 97px auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(232px, 1fr));
+    /* grid-template-rows: 260px, 180px; */
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.tg-accessories {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.tg-img {
+    width: 100%;
+    height: 100%;
+}
+
+.tg {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.tg-text {
+    position: absolute;
+    text-align: center;
+}
+
+.tg-upper {
+    font-size: 16px;
+    color: white;
+    font-family: Lato-Regular;
+}
+
+.tg-down {
+    font-size: 24px;
+    font-family: Lato-Bold;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        padding: 0 32px;
+    }
+    .typeofgoods {
+        margin: 20px 16px 155px 16px;
+        gap: 20px;
+    }
+    .mstext-upper {
+        font-size: 44px;
+        font-family: Lato-Black;
+    }
+    .mstext-down {
+        font-size: 24px;
+        font-family: Lato-Bold;
+    }
+    .mslogo {
+        margin: auto auto auto 34px;
+        width: 311px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        padding: 0 16px;
+    }
+    .imgsettings {
+        display: none;
+    }
+    .rightmenu {
+        width: 32px;
+    }
+    .personalaccount {
+        display: none;
+    }
+    .cart {
+        display: none;
+    }
+    .mainslide {
+        min-height: 360px;
+        grid-template-columns: 1fr;
+    }
+    .mstext-upper {
+        font-size: 38px;
+        font-family: Lato-Black;
+    }
+    .mstext-down {
+        font-size: 20px;
+        font-family: Lato-Bold;
+    }
+    .mslogo {
+        margin: auto;
+        grid-template-rows: 263px;
+        /* height: 66px; */
+    }
+    .typeofgoods {
+        margin: 64px auto 97px auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 32px;
+    }
+    .tg-accessories {
+        display: none;
+    }
 }
