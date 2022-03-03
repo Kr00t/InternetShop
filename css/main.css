@@ -199,7 +199,8 @@ body {
     .mslogo {
         margin: auto;
         grid-template-rows: 263px;
-        /* height: 66px; */
+        height: 66px;
+        width: 263px;
     }
     .typeofgoods {
         margin: 64px auto 97px auto;
