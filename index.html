@@ -7,74 +7,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет магазин или как его там</title>
     <link href="./css/main.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+    </style>
 </head>
 
 <body>
     <div class='container'>
-        <div class='menu'>
-            <div class='leftmenu'>
-                <img src="./images/logo.svg" alt="logo">
-                <img src="./images/search.svg" alt="search">
+        <header>
+            <div class='menu'>
+                <div class='leftmenu'>
+                    <img src="./images/logo.svg" alt="logo">
+                    <img src="./images/search.svg" alt="search">
+                </div>
+                <div class='rightmenu'>
+                    <img class='menubars' src="./images/menu.svg" alt="menu">
+                    <a class='personalaccount' href="#"><img src="./images/personalAccount.svg" alt="personalAccount"></a>
+                    <div class='cart'>
+                        <a href="#"><img src="./images/cart.svg" alt="cart"></a>
+                        <p class='cartnumber'>15</p>
+                    </div>
+                </div>
             </div>
-            <div class='rightmenu'>
-                <img src="./images/menu.svg" alt="menu">
-                <a class='personalaccount' href="#"><img src="./images/personalAccount.svg" alt="personalAccount"></a>
-                <a class='cart' href="#"><img src="./images/cart.svg" alt="cart"></a>
+        </header>
+        <main>
+            <div class='mainslide'>
+                <div class='imgsettings'>
+                    <img class='ms-img' src="./images/manInJacket.png" alt="">
+                </div>
+                <div class=mslogo>
+                    <img src="./images/palka.svg" alt="">
+                    <div class='mstext'>
+                        <p class='mstext-top'>THE BRAND</p>
+                        <p class='mstext-bottom'>OF LUXERIOUS <span class='mstext-pink'>FASHION </span> </p>
+                    </div>
+                </div>
+                <div class='mainslideMenu'>
+                    <div class='mainslideMenuBlack hidden'></div>
+                    <div class='mainslideMenuList hidden'>
+                        <img class='krestix' src="./images/krestix.svg" alt="">
+                        <div class='mainslideMenuText'>MENU</div>
+                        <div class='mainslideMenuUL'>
+                            <p>MAN</p>
+                            <a href="#">Accessories</a><br>
+                            <a href="#">Bags</a><br>
+                            <a href="#">Denim</a><br>
+                            <a href="#">T-Shirts</a><br>
+                        </div>
+                        <div class='mainslideMenuUL'>
+                            <p>WOMAN</p>
+                            <a href="#">Accessories</a><br>
+                            <a href="#">Jackets & Coats</a><br>
+                            <a href="#">T-Shirts</a><br>
+                            <a href="#">Shirts</a><br>
+                        </div>
+                        <div class='mainslideMenuUL'>
+                            <p>KIDS</p>
+                            <a href="#">Accessories</a><br>
+                            <a href="#">Jackets & Coats</a><br>
+                            <a href="#">T-Shirts</a><br>
+                            <a href="#">Shirts</a><br>
+                            <a href="#">Bags</a><br>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class='typeofgoods'>
+                <div class='tg'>
+                    <div>
+                        <img class='tg-img' src="./images/4women.png" alt="">
+                    </div>
+                    <div class='tg-text'>
+                        <p class='tg-upper'>30% OFF</p>
+                        <p class='tg-down mstext-pink'>FOR WOMEN</p>
+                    </div>
+                </div>
+                <div class='tg'>
+                    <div>
+                        <img class='tg-img' src="./images/4men.png" alt="">
+                    </div>
+                    <div class='tg-text'>
+                        <p class='tg-upper'>HOT DEAL</p>
+                        <p class='tg-down mstext-pink'>FOR MEN</p>
+                    </div>
+                </div>
+                <div class='tg'>
+                    <div>
+                        <img class='tg-img' src="./images/4kids.png" alt="">
+                    </div>
+                    <div class='tg-text'>
+                        <p class='tg-upper'>NEW ARRIVALS</p>
+                        <p class='tg-down mstext-pink'>FOR KIDS</p>
+                    </div>
+                </div>
+                <div class='tg-accessories'>
+                    <div>
+                        <img class='tg-img tg-accessories-img' src="./images/accesories.png" alt="">
+                    </div>
+                    <div class='tg-text'>
+                        <p class='tg-upper'>LUXIROUS & TRENDY</p>
+                        <p class='tg-down mstext-pink'>ACCESORIES</p>
+                    </div>
+                </div>
+            </div>
+            <div class='products'>
+                <div class='productsText'>
+                    <p class='productsTextTop'>Fetured Items</p>
+                    <p class='productsTextBottom'>Shop for items based on what we featured in this week</p>
+                </div>
+                <div class='productsGrid'>
+                    <div class='productsSection'>
+                        <div class='productsSectionImgWrap'>
+                            <div class='productsSectionImgWrapBG'>
+                                <div class='productsSectionImgWrapBGCart'>
+                                    <img src="./images/cart.svg" alt="">
+                                    <a href="#">Add to Cart</a>
+                                </div>
+                            </div>
+                            <img src="./images/section1.png" alt="">
+                        </div>
+                        <div class='productsSectionText'>
+                            <p>ELLERY X M'O CAPSULE</p>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p>$52.00</p>
+                        </div>
+                    </div>
+                    <div class='productsSection'>
+                        <div class='productsSectionImgWrap'>
+                            <div class='productsSectionImgWrapBG'>
+                                <div class='productsSectionImgWrapBGCart'>
+                                    <img src="./images/cart.svg" alt="">
+                                    <a href="#">Add to Cart</a>
+                                </div>
+                            </div>
+                            <img src="./images/section2.png" alt="">
+                        </div>
+                        <div class='productsSectionText'>
+                            <p>ELLERY X M'O CAPSULE</p>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p>$52.00</p>
+                        </div>
+                    </div>
+                    <div class='productsSection'>
+                        <div class='productsSectionImgWrap'>
+                            <div class='productsSectionImgWrapBG'>
+                                <div class='productsSectionImgWrapBGCart'>
+                                    <img src="./images/cart.svg" alt="">
+                                    <a href="#">Add to Cart</a>
+                                </div>
+                            </div>
+                            <img src="./images/section3.png" alt="">
+                        </div>
+                        <div class='productsSectionText'>
+                            <p>ELLERY X M'O CAPSULE</p>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p>$52.00</p>
+                        </div>
+                    </div>
+                    <div class='productsSection'>
+                        <div class='productsSectionImgWrap'>
+                            <div class='productsSectionImgWrapBG'>
+                                <div class='productsSectionImgWrapBGCart'>
+                                    <img src="./images/cart.svg" alt="">
+                                    <a href="#">Add to Cart</a>
+                                </div>
+                            </div>
+                            <img src="./images/section4.png" alt="">
+                        </div>
+                        <div class='productsSectionText'>
+                            <p>ELLERY X M'O CAPSULE</p>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p>$52.00</p>
+                        </div>
+                    </div>
+                    <div class='productsSection'>
+                        <div class='productsSectionImgWrap'>
+                            <div class='productsSectionImgWrapBG'>
+                                <div class='productsSectionImgWrapBGCart'>
+                                    <img src="./images/cart.svg" alt="">
+                                    <a href="#">Add to Cart</a>
+                                </div>
+                            </div>
+                            <img src="./images/section5.png" alt="">
+                        </div>
+                        <div class='productsSectionText'>
+                            <p>ELLERY X M'O CAPSULE</p>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p>$52.00</p>
+                        </div>
+                    </div>
+                    <div class='productsSection'>
+                        <div class='productsSectionImgWrap'>
+                            <div class='productsSectionImgWrapBG'>
+                                <div class='productsSectionImgWrapBGCart'>
+                                    <img src="./images/cart.svg" alt="">
+                                    <a href="#">Add to Cart</a>
+                                </div>
+                            </div>
+                            <img src="./images/section6.png" alt="">
+                        </div>
+                        <div class='productsSectionText'>
+                            <p>ELLERY X M'O CAPSULE</p>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p>$52.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='productsButton'>
+                    <a href="#">Browse All Product</a>
+                </div>
+            </div>
+        </main>
+        <footer>
 
-        <div class='mainslide'>
-            <div class='imgsettings'>
-                <img class='ms-img' src="./images/manInJacket.png" alt="">
-            </div>
-            <div class=mslogo>
-                <img src="./images/palka.svg" alt="">
-                <div class='mstext'>
-                    <p class='mstext-upper'>THE BRAND</p>
-                    <p class='mstext-down'>OF LUXERIOUS <span class='mstext-pink'>FASHION </span> </p>
-                </div>
-            </div>
-        </div>
-
-        <div class='typeofgoods'>
-            <div class='tg'>
-                <div>
-                    <img class='tg-img' src="./images/4women.png" alt="">
-                </div>
-                <div class='tg-text'>
-                    <p class='tg-upper'>30% OFF</p>
-                    <p class='tg-down mstext-pink'>FOR WOMEN</p>
-                </div>
-            </div>
-            <div class='tg'>
-                <div>
-                    <img class='tg-img' src="./images/4men.png" alt="">
-                </div>
-                <div class='tg-text'>
-                    <p class='tg-upper'>HOT DEAL</p>
-                    <p class='tg-down mstext-pink'>FOR MEN</p>
-                </div>
-            </div>
-            <div class='tg'>
-                <div>
-                    <img class='tg-img' src="./images/4kids.png" alt="">
-                </div>
-                <div class='tg-text'>
-                    <p class='tg-upper'>NEW ARRIVALS</p>
-                    <p class='tg-down mstext-pink'>FOR KIDS</p>
-                </div>
-            </div>
-            <div class='tg-accessories'>
-                <div>
-                    <img class='tg-img' src="./images/accesories.png" alt="">
-                </div>
-                <div class='tg-text'>
-                    <p class='tg-upper'>LUXIROUS & TRENDY</p>
-                    <p class='tg-down mstext-pink'>ACCESORIES</p>
-                </div>
-            </div>
-        </div>
+        </footer>
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
