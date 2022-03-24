@@ -4,16 +4,18 @@
 }
 
 body {
-    background-color: #E5E5E5;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: normal;
 }
 
 main {
-    padding-left: 231px;
-    padding-right: 231px;
-    box-sizing: border-box;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 95px;
 }
 
 .hidden {
@@ -26,7 +28,6 @@ main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    background-color: white;
 }
 
 .menu {
@@ -101,21 +102,15 @@ main {
     justify-content: space-between;
 }
 
-.mstext {
-    /* display: inline-block; */
-}
-
 .mstext-top {
     font-size: 48px;
     font-weight: 900;
-    font-size: 48px;
     line-height: 58px;
 }
 
 .mstext-bottom {
     font-size: 32px;
     font-weight: bold;
-    font-size: 32px;
     line-height: 38px;
 }
 
@@ -156,11 +151,17 @@ main {
     height: 100%;
 }
 
+.tg-accessories-img {
+    width: 100%;
+    height: 100%;
+}
+
 .tg {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .tg-text {
@@ -257,19 +258,20 @@ main {
 }
 
 .productsButton {
-    height: 48px;
-    width: 212px;
+    display: block;
     border: 1px solid #FF6A6A;
-    margin: 0 auto;
     text-align: center;
-    align-content: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    background: none;
+    padding: 14px 39px;
+    margin: 0 auto;
 }
 
-.productsButton a {
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 48px;
-    color: #F26376;
+.productsButton:hover {
+    color: white;
+    background-color: #F16D7F;
 }
 
 .productsSection {
@@ -281,6 +283,7 @@ main {
 }
 
 .productsSectionImgWrap img {
+    display: block;
     height: 100%;
     width: 100%;
 }
@@ -314,6 +317,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: none;
 }
 
 .productsSectionImgWrapBGCart img {
@@ -322,7 +326,7 @@ main {
     margin-left: 13px;
 }
 
-.productsSectionImgWrapBGCart a {
+.productsSectionImgWrapBGCart span {
     margin-right: 16px;
     font-size: 14px;
     line-height: 17px;
@@ -330,7 +334,7 @@ main {
     color: white;
 }
 
-.productsSection p:nth-child(1) {
+.productsSection h2 {
     font-size: 13px;
     line-height: 16px;
     color: #000000;
@@ -349,35 +353,195 @@ main {
     line-height: 19px;
     color: #F16D7F;
     margin-top: 18px;
-    margin-buttom 20px;
+    margin-bottom: 20px;
 }
 
 .productsSectionText {
-    margin: 25px 29px 20px 16px;
+    margin: 25px 16px 20px;
+}
+
+.footerInfo {
+    height: 341px;
+    width: 100%;
+    background-color: #222224;
+}
+
+.footerInfoContainer {
+    height: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footerInfoSection {
+    width: 360px;
+    text-align: center;
+}
+
+.footerInfoSection h2 {
+    margin-top: 19px;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+
+.footerInfoSection p {
+    font-weight: 300;
+    font-size: 13.972px;
+    margin-top: 16px;
+    line-height: 17px;
+    color: #FBFBFB;
+}
+
+.subscribe {
+    background: url(/images/SubscribeBG.png) no-repeat;
+    background-size: cover;
+    padding-top: 97px;
+    padding-bottom: 126px;
+}
+
+.subscribeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.subscribeBlocksWithPhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 360px;
+    max-height: 225px;
+}
+
+.subscribeBlocksWithPhoto img {
+    height: 96px;
+    width: 96px;
+}
+
+.subscribeBlocksWithPhoto span {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.subscribeBlocksSubscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 356px;
+}
+
+.subscribeBlocksSubscribe p {
+    font-weight: bold;
+    font-size: 24px;
+    color: #222224;
+}
+
+.subscribeBlocksSubscribe {
+    font-size: 18px;
+    color: #222224;
+}
+
+.subscribeBlocksInput {
+    display: flex;
+    margin-top: 32px;
+    width: inherit;
+    border: none;
+}
+
+.subscribeBlocksInputInput {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    width: 70%;
+    background: #E1E1E1;
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 22px;
+    outline: none;
+}
+
+.subscribeBlocksInputButton {
+    width: 30%;
+    height: 49px;
+    background: #F16D7F;
+    border: none;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.socialNetworks {
+    /* padding: 0 235px; */
+    background-color: #222224;
+    height: 79px;
+    color: #FFFFFF;
+}
+
+.socialNetworksContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.socialNetworks .copyRight {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px
+}
+
+.socialNetworks .social {
+    display: flex;
+}
+
+.socialNetworks .social a {
+    width: 32px;
+    height: 32px;
+    color: #000000;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.socialNetworks .social a:not(:last-child) {
+    margin-right: 7px;
+}
+
+.socialNetworks .social a:hover {
+    background-color: #F16D7F;
+    color: white;
 }
 
 @media (min-width: 1600px) {
     .mainslideMenuBlack {
         position: absolute;
-        min-height: 767px;
         width: 100%;
-        /* margin: 0 auto; */
+        top: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.500)
     }
 }
 
 @media (max-width: 1024px) {
-    main {
-        padding-left: 16px;
-        padding-right: 16px;
-        box-sizing: border-box;
-    }
     .menu {
         padding: 0 32px;
     }
     .typeofgoods {
-        margin: 20px auto 155px auto;
+        margin: 20px 16px 155px 16px;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
@@ -396,17 +560,41 @@ main {
         width: 311px;
     }
     .productsGrid {
-        grid-template-columns: repeat(2, minmax(238px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
         margin: 73px auto;
     }
+    .productsSection {
+        margin: 0 18px;
+    }
+    .footerInfo {
+        flex-direction: column;
+        height: 100%;
+        box-sizing: border-box;
+        padding-bottom: 64px;
+    }
+    .footerInfoSection {
+        margin-top: 48px;
+    }
+    .subscribe {
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+    .subscribeContainer {
+        flex-direction: column;
+    }
+    .subscribeBlocksSubscribe {
+        margin-top: 48px;
+    }
+    .socialNetworks {
+        padding: 0 32px;
+        ;
+    }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 414px) {
     main {
-        padding-left: 16px;
-        padding-right: 16px;
-        box-sizing: border-box;
+        margin: 0;
     }
     .menu {
         padding: 0 16px;
@@ -426,6 +614,7 @@ main {
     .mainslide {
         min-height: 360px;
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
     .mstext-top {
         font-weight: 900;
@@ -444,7 +633,7 @@ main {
         width: 263px;
     }
     .typeofgoods {
-        /* margin: 64px 16px; */
+        margin: 64px 16px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 32px;
@@ -453,6 +642,9 @@ main {
     .tg-accessories {
         grid-column: 1 / -1;
         grid-row: 4 / 5;
+    }
+    .tg-img {
+        width: 100%;
     }
     .tg-accessories-img {
         object-fit: cover;
@@ -472,5 +664,28 @@ main {
         grid-template-columns: repeat(1, minmax(238px, 1fr));
         gap: 16px;
         margin: 64px auto 40px auto;
+    }
+    .productsSection {
+        margin: 0 8px;
+    }
+    .subscribe {
+        padding-top: 64px;
+        padding-bottom: 110px;
+    }
+    .subscribeContainer {
+        flex-direction: column;
+    }
+    .subscribeBlocksSubscribe {
+        margin-top: 59px;
+    }
+    .socialNetworks {
+        height: 143px;
+    }
+    .socialNetworksContainer {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .socialNetworksContainer .social {
+        margin: 40px auto;
     }
 }
